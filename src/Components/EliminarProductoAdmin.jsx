@@ -10,7 +10,7 @@ const EliminarProductoAdmin = () => {
   const [dataAutos, setDataAutos] = useState([]);
   const [start, setStart] = useState(null)
   const [hasMore, setHasMore] = useState(true)
-  const [href, setHref] = useState(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados`)
+  const [href, setHref] = useState(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados`)
 
   function fetchInicialProductos() {
     try {
@@ -72,9 +72,9 @@ const EliminarProductoAdmin = () => {
 
   function fetchSubmitProductos() {
     setStart(null)
-    setHref(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados?start=null`+"&titulo="+dataEliminarProducto.titulo+"&categoria="+dataEliminarProducto.categoria+"&ciudad="+dataEliminarProducto.ciudad)
+    setHref(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados?start=null`+"&titulo="+dataEliminarProducto.titulo+"&categoria="+dataEliminarProducto.categoria+"&ciudad="+dataEliminarProducto.ciudad)
     try {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados?start=null`+"&titulo="+dataEliminarProducto.titulo+"&categoria="+dataEliminarProducto.categoria+"&ciudad="+dataEliminarProducto.ciudad)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados?start=null`+"&titulo="+dataEliminarProducto.titulo+"&categoria="+dataEliminarProducto.categoria+"&ciudad="+dataEliminarProducto.ciudad)
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
@@ -104,7 +104,7 @@ const EliminarProductoAdmin = () => {
 
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/ciudades")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/ciudades")
         .then((res) => res.json())
         .then((data) => setDataCiudades(data));
     } catch (error) {
@@ -116,7 +116,7 @@ const EliminarProductoAdmin = () => {
   
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/categorias")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/categorias")
         .then((res) => res.json())
         .then((data) => setCategoryList(data));
     } catch (error) {

@@ -5,7 +5,7 @@ import "./ConfirmacionStyles.css";
 const Confirmacion = ({ idMiReserva, clienteId }) => {
   function eliminarReserva() {
     try {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/reservas/${idMiReserva}`, {
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/reservas/${idMiReserva}`, {
         method: "DELETE",
         body: JSON.stringify(),
         headers: { "Content-Type": "application/json" },

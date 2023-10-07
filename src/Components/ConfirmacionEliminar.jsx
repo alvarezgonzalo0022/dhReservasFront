@@ -10,7 +10,7 @@ const ConfirmacionEliminar = ({ idProductoEliminar }) => {
   function eliminarProducto() {
     setMensajeCargando(true)
     try {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${idProductoEliminar}`, {
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${idProductoEliminar}`, {
         method: "DELETE",
         body: JSON.stringify(),
         headers: { "Content-Type": "application/json" },

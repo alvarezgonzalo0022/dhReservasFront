@@ -71,7 +71,7 @@ const CreateAccount = () => {
         password: e.target[3].value,
       };
       try {
-        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/clientes`, {
+        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/clientes`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json" },
@@ -79,7 +79,7 @@ const CreateAccount = () => {
           if (res.status === 201) {
             setInUsuario(data)
             try {
-              fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/login`, {
+              fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/login`, {
                 method: "POST",
                 body: JSON.stringify(dataLogin),
                 headers: { "Content-Type": "application/json" },

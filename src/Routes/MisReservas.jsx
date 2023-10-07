@@ -14,14 +14,14 @@ const MisReservas = () => {
   const [reservas, setReservas] = useState([]);
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/clientes")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/clientes")
         .then((res) => res.json())
         .then((data) =>
           data.map((cliente) => {
             if (cliente.email === usuario.email) {
               try {
                 fetch(
-                  `https://dhreservas-bd190ac8106b.herokuapp.com:8080/reservas/listarReservasPorIdUsuario/${cliente.idUsuario}`
+                  `https://dhreservas-bd190ac8106b.herokuapp.com/reservas/listarReservasPorIdUsuario/${cliente.idUsuario}`
                 )
                   .then((res) => res.json())
                   .then((data) => {

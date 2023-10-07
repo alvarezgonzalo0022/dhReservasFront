@@ -12,7 +12,7 @@ const ModificarProductoAdmin = () => {
   const [start, setStart] = useState(null);
   const [hasMore, setHasMore] = useState(true);
   const [href, setHref] = useState(
-    `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados`
+    `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados`
   );
 
   function fetchInicialProductos() {
@@ -91,7 +91,7 @@ const ModificarProductoAdmin = () => {
   function fetchSubmitProductos() {
     setStart(null);
     setHref(
-      `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados?start=null` +
+      `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados?start=null` +
         "&titulo=" +
         dataModificarProducto.titulo +
         "&categoria=" +
@@ -101,7 +101,7 @@ const ModificarProductoAdmin = () => {
     );
     try {
       fetch(
-        `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarProductosPaginados?start=null` +
+        `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarProductosPaginados?start=null` +
           "&titulo=" +
           dataModificarProducto.titulo +
           "&categoria=" +
@@ -138,7 +138,7 @@ const ModificarProductoAdmin = () => {
 
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/ciudades")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/ciudades")
         .then((res) => res.json())
         .then((data) => setDataCiudades(data));
     } catch (error) {
@@ -150,7 +150,7 @@ const ModificarProductoAdmin = () => {
 
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/categorias")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/categorias")
         .then((res) => res.json())
         .then((data) => setCategoryList(data));
     } catch (error) {

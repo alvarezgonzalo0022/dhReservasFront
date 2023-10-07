@@ -17,7 +17,7 @@ const CardReserva = ({ reservaObjeto }) => {
   }
   useEffect(() => {
     try {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${reservaObjeto.producto}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${reservaObjeto.producto}`)
         .then((res) => res.json())
         .then((data) => {
           setProducto(ordenarImagenesPorTituloSolo(data));

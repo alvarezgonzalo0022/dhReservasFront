@@ -7,7 +7,7 @@ const CardCategoria = (imagen) => {
   const filtrar = () => {
     try {
       fetch(
-        `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarPorCategoria/${imagen.categoria}`
+        `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarPorCategoria/${imagen.categoria}`
       )
         .then((res) => res.json())
         .then((data) => {

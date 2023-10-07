@@ -37,7 +37,7 @@ const Buscador = () => {
   useEffect(() => {
     try {
       fetch(
-        "https://dhreservas-bd190ac8106b.herokuapp.com:8080/ciudades"
+        "https://dhreservas-bd190ac8106b.herokuapp.com/ciudades"
       )
         .then((res) => res.json())
         .then((data) => setDataCiudades(data));
@@ -66,7 +66,7 @@ const Buscador = () => {
       let fechaSalida = dataBuscador.checkOut.split("/").reverse().join("-");
       try {
         fetch(
-          `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarPorCiudadYRangoDeFechas/${dataBuscador.ubicacion}/${fechaEntrada}/${fechaSalida}`
+          `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarPorCiudadYRangoDeFechas/${dataBuscador.ubicacion}/${fechaEntrada}/${fechaSalida}`
         )
           .then((res) => res.json())
           .then((data) => {
@@ -85,7 +85,7 @@ const Buscador = () => {
       let fechaSalida = dataBuscador.checkOut.split("/").reverse().join("-");
       try {
         fetch(
-          `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarPorRangoDeFechas/${fechaEntrada}/${fechaSalida}`
+          `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarPorRangoDeFechas/${fechaEntrada}/${fechaSalida}`
         )
           .then((res) => res.json())
           .then((data) => {
@@ -99,7 +99,7 @@ const Buscador = () => {
       // console.log("entro tercero");
       try {
         fetch(
-          `https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/filtrarPorCiudad/${dataBuscador.ubicacion}`
+          `https://dhreservas-bd190ac8106b.herokuapp.com/productos/filtrarPorCiudad/${dataBuscador.ubicacion}`
         )
           .then((res) => res.json())
           .then((data) => {

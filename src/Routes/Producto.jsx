@@ -48,7 +48,7 @@ const Producto = () => {
   const [dataAutoSolo, setDataAutoSolo] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${id}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setDataAutoSolo(ordenarImagenesPorTitulo(data));
@@ -99,7 +99,7 @@ const Producto = () => {
   const [imagenes, setImagenes] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${id}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${id}`)
         .then((res) => res.json())
         .then((data) => setImagenes(ordenarImagenesPorTituloSolo(data)));
     }
@@ -109,7 +109,7 @@ const Producto = () => {
   const [reservas, setReservas] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/reservas/listarReservasPorIdProducto/${id}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/reservas/listarReservasPorIdProducto/${id}`)
         .then((res) => res.json())
         .then((data) =>
           setReservas(

@@ -60,7 +60,7 @@ const Header = () => {
   const [userId, setUserId] = useState();
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/clientes")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/clientes")
         .then((res) => res.json())
         .then((data) =>
           data.map((cliente) => {

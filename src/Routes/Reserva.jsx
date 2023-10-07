@@ -30,7 +30,7 @@ const Reserva = () => {
   const navigate = useNavigate(); //usar para llevarlo a la pagina de reserva con exito
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${id}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setDataAutoSolo(ordenarImagenesPorTitulo(data));
@@ -41,7 +41,7 @@ const Reserva = () => {
   const [reservas, setReservas] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/reservas/listarReservasPorIdProducto/${id}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/reservas/listarReservasPorIdProducto/${id}`)
         .then((res) => res.json())
         .then((data) =>
           setReservas(
@@ -104,7 +104,7 @@ const Reserva = () => {
   const [userId, setUserId] = useState();
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/clientes")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/clientes")
         .then((res) => res.json())
         .then((data) =>
           data.map((cliente) => {
@@ -147,7 +147,7 @@ const Reserva = () => {
         producto: id,
       };
       try {
-        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/reservas`, {
+        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/reservas`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json", Authorization: login },

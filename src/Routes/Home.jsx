@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     try {
       fetch(
-        "https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos"
+        "https://dhreservas-bd190ac8106b.herokuapp.com/productos"
       )
         .then((res) => res.json())
         .then((data) => setDataAutos(data));
@@ -50,7 +50,7 @@ const Home = () => {
   useEffect(() => {
     try {
       fetch(
-        "https://dhreservas-bd190ac8106b.herokuapp.com:8080/categorias"
+        "https://dhreservas-bd190ac8106b.herokuapp.com/categorias"
       )
         .then((res) => res.json())
         .then((data) => setCategoryList(data));
@@ -61,7 +61,7 @@ const Home = () => {
   useEffect(() => {
     try {
       fetch(
-        "https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/random8"
+        "https://dhreservas-bd190ac8106b.herokuapp.com/productos/random8"
       )
         .then((res) => res.json())
         .then((data) => setDataAutosRandom(data));

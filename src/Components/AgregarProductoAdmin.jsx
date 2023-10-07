@@ -83,7 +83,7 @@ const FormularioAdmin = () => {
 
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/ciudades")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/ciudades")
         .then((res) => res.json())
         .then((data) => setDataCiudades(data));
     } catch (error) {
@@ -93,7 +93,7 @@ const FormularioAdmin = () => {
   const [categoryList, setCategoryList] = useState([]);
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/categorias")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/categorias")
         .then((res) => res.json())
         .then((data) =>
           setCategoryList(
@@ -262,7 +262,7 @@ const FormularioAdmin = () => {
       };
       // console.log(dataObjeto)
       try {
-        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos`, {
+        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos`, {
           method: "POST",
           body: JSON.stringify(dataObjeto),
           headers: { "Content-Type": "application/json" },

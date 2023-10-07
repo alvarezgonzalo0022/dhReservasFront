@@ -53,7 +53,7 @@ const Login = () => {
         password: e.target[1].value,
       };
       try {
-        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/login`, {
+        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/login`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json" },
@@ -65,7 +65,7 @@ const Login = () => {
             setLogin(tokenJwt);
             try {
               fetch(
-                `https://dhreservas-bd190ac8106b.herokuapp.com:8080/clientes/buscarClienteEmail/${data.email}`
+                `https://dhreservas-bd190ac8106b.herokuapp.com/clientes/buscarClienteEmail/${data.email}`
               )
                 .then((res) => res.json())
                 .then((data) => {

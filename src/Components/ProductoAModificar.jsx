@@ -27,7 +27,7 @@ const ProductoAModificar = ({ idProductoModificarNum }) => {
   const [ciudadListId, setCiudadListId] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos/${idProductoModificarNum}`)
+      fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos/${idProductoModificarNum}`)
         .then((res) => res.json())
         .then((data) => {
           // setProductoAModificar(data);
@@ -133,7 +133,7 @@ const ProductoAModificar = ({ idProductoModificarNum }) => {
 
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/ciudades")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/ciudades")
         .then((res) => res.json())
         .then((data) =>
           setDataCiudades(
@@ -155,7 +155,7 @@ const ProductoAModificar = ({ idProductoModificarNum }) => {
   //   console.log(productoAModificar.caracteristicas);
   useEffect(() => {
     try {
-      fetch("https://dhreservas-bd190ac8106b.herokuapp.com:8080/categorias")
+      fetch("https://dhreservas-bd190ac8106b.herokuapp.com/categorias")
         .then((res) => res.json())
         .then((data) =>
           setCategoryList(
@@ -330,7 +330,7 @@ const ProductoAModificar = ({ idProductoModificarNum }) => {
       // console.log(dataAgregarProducto);
       // console.log(dataObjeto);
       try {
-        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com:8080/productos`, {
+        fetch(`https://dhreservas-bd190ac8106b.herokuapp.com/productos`, {
           method: "PUT",
           body: JSON.stringify(dataObjeto),
           headers: { "Content-Type": "application/json" },

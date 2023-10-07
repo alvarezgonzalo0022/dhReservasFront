@@ -1,0 +1,264 @@
+.header {
+  position: sticky;
+  background-color: aliceblue;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  flex-flow: row wrap;
+  z-index: 2000;
+}
+.usuario {
+  min-width: 206px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.siglas {
+  background-color: #31363f;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.siglas p {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.hola {
+  color: #00000080;
+}
+.saludo {
+  font-weight: 700;
+  margin: 0px 10px;
+}
+.cajaUsuarioMenu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.saludoNombre {
+  color: #f0572d;
+}
+.iconoCerrar {
+  border: 0;
+}
+.menu {
+  display: none;
+}
+.desaparecer {
+  display: none;
+}
+.Logo {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+.iconoMenu {
+  margin: 0px 15px;
+  color: #191b1d;
+  font-size: 27px;
+}
+.Logo p {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  color: #191b1d;
+}
+
+.DosBtn {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.boton {
+  width: 206px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #f0572d;
+  color: #f0572d;
+}
+.boton:hover{
+  transition: .3s;
+  background-color: #f0572d;
+  color: white;
+  transform: scale(.95);
+}
+.entrarAReservas {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  margin-right: 20xp;
+  margin-right: 20px;
+  border-right: 3px solid #f0572d;
+}
+.entrarAdministracion{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  margin-right: 20xp;
+  margin-right: 20px;
+  border-right: 3px solid #f0572d;
+}
+@media (max-width: 900px) {
+  .Logo p {
+    display: none;
+  }
+  .boton {
+    width: 164px;
+    margin: 10px;
+    height: 40px;
+  }
+  .DosBtn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu {
+    display: block;
+    border: 0;
+  }
+  .abrir {
+    font-size: 38px;
+  }
+  .boton {
+    border: 0;
+    margin: 10px 0px;
+    text-align: end;
+    color: #31363f;
+  }
+  .header {
+    padding: 21px 11px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+      0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  .header.isActive {
+    padding: 0px;
+  }
+  .borrar {
+    display: none;
+  }
+  .DosBtn {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    display: none;
+  }
+  .DosBtn.isActive {
+    display: flex;
+  }
+  .desaparecer {
+    display: none;
+  }
+  .UnBtn {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    display: flex;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .UnBtn.isActive {
+    height: 50vh;
+    opacity: 1;
+  }
+  .caja1 {
+    width: 100%;
+    height: 25vh;
+    padding: 10px;
+    background-color: #f0572d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  /* .caja1 p {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+  } */
+  .caja2 {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+  }
+  hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+  }
+  .iconosMenu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    margin: 0px 5px;
+  }
+  .menuTitulo {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+  }
+  .cerrar {
+    color: white;
+    font-size: 38px;
+  }
+  .usuario{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .siglas{
+background-color: #FFFFFF;
+  }
+  .siglas p{
+    color: #191B1D;
+  }
+  .hola{
+color: #FFFFFF;
+text-align: end;
+  }
+  .saludoNombre{
+color: #31363F;
+  }
+  .iconoMenu{
+    font-size: 21px;
+  }
+  .mensajeCerrar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+  .redireccion span{
+    color: #f0572d;
+  }
+
+}

@@ -1,0 +1,40 @@
+.administracion {
+  padding: 23px 40px 40px 40px;
+  /* background-color: rgba(84, 87, 118, 0.1); */
+}
+.tituloAdmin {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 23px;
+}
+.tituloAdmin > span {
+  cursor: pointer;
+}
+.bloqueHeaderAdministracion {
+  position: sticky;
+  background-color: #191B1D;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  z-index: 200;
+}
+.bloqueHeaderAdministracion > p{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .administracion {
+    padding: 23px 0px 23px 0px;
+  }
+  .tituloAdmin {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}

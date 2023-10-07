@@ -1,0 +1,228 @@
+.buscador {
+  background-color: #191b1d;
+}
+.opciones {
+  max-height: 10px;
+}
+.wrap {
+  background: #fff;
+  display: flex;
+  border-radius: 5px;
+  margin-right: 10px;
+  align-items: center;
+  height: 40px;
+  width: 422px;
+  border: 1px solid #b5b5b5;
+}
+.wrap:hover {
+  border: 1px solid #000000;
+}
+.iconoBuscador {
+  font-size: 18px !important;
+  width: 18px !important;
+  height: 100% !important;
+  color: #191b1d !important;
+  margin-left: 10px;
+}
+.selectPais{
+  font-size: 14px;
+  font-weight: 700;
+}
+.iconoBuscadorOpcion{
+  font-size: 30px !important;
+  color: #191b1d !important;
+  margin-right: 5px;
+  margin-left: -8px;
+}
+.inputCiudad {
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+.inputCiudad:focus {
+  outline: none;
+}
+.tituloBusca {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  padding: 32px;
+  color: white;
+  height: 100%;
+}
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+}
+.calendarioPhone {
+  display: none;
+}
+.calendarioDesktopTablet {
+  display: block;
+  width: 422px;
+}
+.buscar {
+  width: 206px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f0572d;
+  padding: 5px;
+  position: relative;
+  transition: 0.5s;
+  font-size: 17px;
+}
+.buscar p{
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #f0572d;
+}
+.buscar span{
+  position: absolute;
+  top: 0.25em;
+  right: 0.4em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  color: #fff;
+  /* font-weight: 200; */
+}
+.buscar:hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+.buscar:hover span {
+  opacity: 1;
+}
+.buscar:hover {
+  background-color: #f0572d;
+}
+
+/* .contenedor {
+  width: 422px;
+  height: 56px;
+  margin-right: 10px;
+}
+.selectbox {
+  height: 56px;
+  position: relative;
+}
+.select {
+  background-color: white;
+  height: 56px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s ease all;
+  padding-left: 10px;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.select.active,
+.select:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  border: 2px solid black;
+}
+.titulo {
+  font-weight: 600;
+}
+.contenido-select {
+  padding-left: 19px;
+  padding-top: 2px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.placeholder {
+  color: #7f7f7f;
+}
+.descripcion {
+  font-size: 14px;
+  color: #7f7f7f;
+  padding-left: 10px;
+}
+.opciones {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  max-height: 254px;
+  overflow: auto;
+  margin-top: 10px;
+  z-index: 100;
+  width: 100%;
+  display: none;
+}
+.opciones.active {
+  display: block;
+}
+.contenido-opcion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #1dbeb4;
+  transition: 0.2s ease all;
+  padding: 10px;
+}
+.material-icons-outlined {
+  font-size: 30px;
+}
+.textos {
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+.contenido-opcion:hover {
+  background-color: #1dbeb4;
+} */
+@media (max-width: 1100px) {
+  .calendarioDesktopTablet {
+    width: 100%;
+  }
+  .wrap {
+    width: 100%;
+  }
+  .buscar {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .buscar {
+    width: 63%;
+  }
+}
+@media (max-width: 550px) {
+  .calendarioPhone {
+    display: block;
+    width: 100%;
+  }
+  .calendarioDesktopTablet {
+    display: none;
+  }
+  .formulario {
+    flex-direction: column;
+  }
+  .wrap {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .calendario {
+    margin-bottom: 10px;
+  }
+  .buscar {
+    margin-left: 0px;
+    width: 100%;
+  }
+}

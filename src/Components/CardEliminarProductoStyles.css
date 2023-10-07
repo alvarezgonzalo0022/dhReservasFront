@@ -1,0 +1,146 @@
+.cardProductosEliminar{
+  width: 848px;
+  height: 283px;
+  display: flex;
+  margin: 10px 10px 25px 10px;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dfe4ea;
+  position: relative;
+}
+.cardEliminarProducto {
+  width: 848px;
+  height: 283px;
+  display: flex;
+  margin: 10px 10px 25px 10px;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dfe4ea;
+  position: relative;
+  padding: 20px;
+}
+.cancelarEliminacion {
+  position: absolute;
+  border: none;
+  right: 20px;
+}
+.cancelarEliminacion > span {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+.cancelarEliminacion:hover > span {
+  transform: scale(1.5);
+}
+
+.cancelarEliminacion:hover > span {
+  color: rgb(168, 7, 7);
+}
+.eliminarProducto {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 67px;
+}
+
+.eliminarProducto {
+  appearance: none;
+  background-color: white;
+  /* border: 0.125em solid rgb(168, 7, 7); */
+  border-radius: 0.9375em;
+  border: none;
+  box-sizing: border-box;
+  color: rgb(168, 7, 7);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.eliminarProducto:disabled {
+  pointer-events: none;
+}
+
+.eliminarProducto:hover {
+  color: #fff;
+  background-color: rgb(168, 7, 7);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.eliminarProducto:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (max-width: 1500px) {
+  .cardProductosEliminar{
+    width: 587px;
+  }
+  .cardEliminarProducto {
+    width: 635px;
+  }
+}
+@media (max-width: 1310px) {
+  .cardProductosEliminar{
+    width: 45%;
+  }
+  .cardEliminarProducto {
+    width: 45%;
+  }
+}
+@media (max-width: 1220px) {
+  .cardProductosEliminar{
+    width: 30%;
+    height: 491px;
+    flex-direction: column;
+  }
+  .cardEliminarProducto {
+    width: 30%;
+    height: 491px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .cardProductosEliminar{
+    width: 45%;
+  }
+  .cardEliminarProducto {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .cardProductosEliminar{
+    width: 90%;
+    height: 300px;
+    flex-direction: inherit;
+  }
+  .cardEliminarProducto {
+    width: 90%;
+    height: 300px;
+    flex-direction: inherit;
+  }
+}
+@media (max-width: 550px) {
+  .cardProductosEliminar{
+    width: 393px;
+    height: 491px;
+    flex-direction: column;
+  }
+  .cardEliminarProducto {
+    width: 393px;
+    height: 491px;
+    flex-direction: column;
+  }
+}

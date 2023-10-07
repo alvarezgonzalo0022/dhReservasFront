@@ -1,0 +1,83 @@
+.calendarioProducto{
+    width: 100% !important;
+    position: relative !important;
+}
+.rmdp-week-day {
+  color: #f0572d !important;
+}
+.rmdp-arrow{
+    border:solid #f0572d !important;
+    border-width: 0 2px 2px 0 !important;
+}
+.rmdp-range span {
+  color: white !important;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+  color: black !important;
+}
+.rmdp-day.rmdp-today span {
+  background-color: #f0572d !important;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+  background-color: #f0572d !important;
+}
+.rmdp-range {
+  background-color: #f0572d !important;
+  border-radius: 100% !important;
+}
+.rmdp-range-hover.start,
+.rmdp-range.start {
+  border-radius: 100% !important;
+}
+.rmdp-range-hover.end,
+.rmdp-range.end {
+  border-radius: 100% !important;
+}
+.custom-calendarProducto {
+  width: 100% !important;
+}
+.rmdp-calendar {
+  width: 100% !important;
+}
+.rmdp-day-picker {
+  width: 100% !important;
+  justify-content: space-around !important;
+}
+.rmdp-day-picker div:first-of-type {
+    margin-right: 0px !important;
+}
+.rmdp-range-hover {
+  background-color: #f0572d !important;
+  border-radius: 100% !important;
+}
+.rmdp-range-hover span {
+  color: white !important;
+}
+@media (max-width: 1100px) {
+  .calendario {
+    width: 100% !important;
+  }
+  .calendarioNuevo {
+    width: inherit !important;
+  }
+  .rmdp-container {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 550px) {
+  .custom-calendarProducto {
+    width: 100% !important;
+  }
+  .cajaBotonProducto{
+    flex-direction:column !important
+  }
+  .cajaBotonProducto p{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .cajaBotonProducto button{
+    width: 100% !important;
+  }
+}

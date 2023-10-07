@@ -1,0 +1,22 @@
+.imagenSeleccionado{
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    background-color: rgba(190, 190, 190, 0.1);
+    padding: 40px 28px 40px 28px;
+}
+.urlImagenSeleccionado{
+    width: 100%;
+    margin-right: 10px;
+}
+.cajaAtributoInvisible{
+    width: 42px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

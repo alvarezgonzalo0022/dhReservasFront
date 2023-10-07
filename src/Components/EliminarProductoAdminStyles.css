@@ -1,0 +1,97 @@
+.eliminarProductoAdmin {
+  justify-items: center;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 34px 25px;
+}
+.selectEliminarAdmin {
+  height: 40px;
+  width: 30%;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: none;
+}
+.filtrarEliminado {
+  display: flex;
+  align-items: center;
+}
+.buscarProductoEliminar {
+  width: 206px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f0572d;
+  padding: 5px;
+  position: relative;
+  transition: 0.5s;
+  font-size: 17px;
+}
+.buscarProductoEliminar p {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #f0572d;
+}
+.buscarProductoEliminar span {
+  position: absolute;
+  top: 0.25em;
+  right: 0.4em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  color: #fff;
+  /* font-weight: 200; */
+}
+.buscarProductoEliminar:hover p {
+  left: 0.6em;
+  color: #fff;
+}
+
+.buscarProductoEliminar:hover span {
+  opacity: 1;
+}
+.buscarProductoEliminar:hover {
+  background-color: #f0572d;
+}
+.listCardProductos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0px 0px 0px;
+  align-items: center;
+}
+.bulb svg {
+  display: block;
+  height: 90px;
+  transform-origin: center top;
+  animation: swing_31 1.3s ease-in-out infinite alternate;
+}
+
+@media (max-width: 1100px){
+  .filtrarEliminado{
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .selectEliminarAdmin{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .buscarProductoEliminar{
+    width: 100%;
+  }
+}
+
+@keyframes swing_31 {
+  0% {
+    transform: rotate(18deg);
+  }
+
+  100% {
+    transform: rotate(-18deg);
+  }
+}

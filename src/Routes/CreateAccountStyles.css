@@ -1,0 +1,136 @@
+.formCreate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tituloCreate {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f0572d;
+}
+.formularioCreate {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cajaNomApe {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.create {
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: 0px;
+  padding: 14px;
+}
+.create:focus {
+  outline: none;
+}
+.error{
+  background-color: #FFE1E1;
+  border: 2px solid #FF0000;
+}
+.invisible{
+  display: none;
+}
+.visible{
+  display: block;
+  color: #FF0000;
+  font-size: 12px;
+  text-align: end;
+}
+.nomApe {
+  width: 49%;
+}
+.cajaContra{
+  display: flex;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 0px 13px;
+}
+.mostrarContra{
+  border: 0px;
+  display: flex;
+  align-items: center;
+}
+.inputContra{
+  width: 100%;
+  height: 40px;
+  border: 0px;
+}
+.inputContra:focus{
+  outline: none;
+}
+.fino{
+font-weight: 200;
+color: #8b7060;;
+}
+.botonCrear {
+  width: 206px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f0572d;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 12%);
+  color: white;
+  margin-bottom: 23px;
+  transition: all ease-in-out 0.2s;
+  border: 2px solid #f0572d;
+}
+.botonCrear:hover{
+  background-color:#ab3f21;
+}
+.cajaFormularioCreate {
+  width: 100%;
+  margin: 50px;
+}
+.linkInicio {
+  color: #4285f4;
+}
+@media (max-width: 768px) {
+  .formularioCreate {
+    width: 346px;
+  }
+  .nomApe {
+    width: 100%;
+  }
+  .cajaNomApe {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .cajaFormularioCreate{
+    margin: 0px 0px 15px 0px;
+  }
+  .tituloCreate{
+    font-size: 24px;
+  }
+  .formularioCreate {
+    width: 300px;
+  }
+  .nomApe {
+    width: 100%;
+  }
+  .cajaNomApe {
+    flex-direction: column;
+  }
+  .botonCrear{
+    width: 100%;
+  }
+  label{
+    font-size: 12px;
+  }
+  .redireccion{
+    font-size: 12px;
+  }
+}

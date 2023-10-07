@@ -1,0 +1,290 @@
+.reservaDelProducto {
+  display: grid;
+}
+.cajaReservando {
+  grid-column: 1 / span 4;
+  height: 942px;
+  background-color: rgba(25, 27, 29, 0.1);
+  display: grid;
+  padding: 37px 40px;
+  gap: 27px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+}
+.tituloReserva {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.cajaFormularioReserva {
+  grid-column: 1 / span 2;
+}
+.cardReserva {
+  grid-column: 3 / span 1;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: grid;
+  height: 840px;
+}
+.cardReservaTitulo {
+  padding: 18px 21px;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: end;
+}
+.skeletonImagenReserva {
+  width: 100%;
+  height: 300px;
+  background-color: #e5e4e1;
+}
+.cardReservaImagen {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.bloqueInputsReserva {
+  display: grid;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 31px 25px;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+.nombreReserva {
+  grid-column: 1 / span 1;
+}
+.apellidoReserva {
+  grid-column: 2 / span 1;
+}
+.emailReserva{
+  grid-column: 1 / span 2;
+}
+.reserva {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background: rgba(223, 228, 234, 0.4);
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 14px;
+}
+
+.reservaCiudad {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 14px;
+}
+.calendarioReservaPhone {
+  display: none;
+}
+.calendarioReservaDesktopTablet {
+  display: none;
+}
+.calendarioReservaDesktop {
+  display: block;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.calendarioReservaDesktopTablet {
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.horarioLlegada {
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 19px 23px;
+}
+.horario {
+  background: #ffffff;
+  height: 40px;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+}
+.horarioLlegada p {
+  margin: 10px 0px 10px 0px;
+}
+/* .css-13cymwt-control {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15) !important;
+}
+.css-t3ipsp-control:hover {
+  border-color: #f0572d !important;
+}
+.css-t3ipsp-control {
+  border-color: #f0572d !important;
+  box-shadow: 0 0 0 1px #f0572d !important;
+}
+.css-15lsz6c-indicatorContainer {
+  color: hsl(13, 87%, 40%) !important;
+}
+.css-15lsz6c-indicatorContainer:hover {
+  color: hsl(13, 87%, 20%) !important;
+}
+.css-1xc3v61-indicatorContainer {
+  color: hsl(13, 87%, 80%) !important;
+} */
+.datosReserva {
+  padding: 18px 21px;
+}
+.cajaReserva {
+  margin-bottom: 33px;
+}
+.cajaReserva2 {
+  margin-bottom: 44px;
+}
+.cajasReservasCheck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  border-bottom: 1px solid #bebebe;
+  border-top: 1px solid #bebebe;
+}
+.confirmarReserva {
+  height: 50px;
+  background: #f0572d;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+}
+.invisibleReserva {
+  display: none;
+}
+.horarioLlegadaTexto {
+  display: flex;
+  align-items: flex-end;
+}
+.visibleReserva {
+  display: block;
+  color: #ff0000;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.skeletonScreenReservaDesktop {
+  display: inline;
+}
+.skeletonScreenReservaTablet {
+  display: none;
+}
+.skeletonScreenReservaTablet2 {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .calendarioReservaDesktop {
+    display: none;
+  }
+  .calendarioReservaDesktopTablet {
+    display: block;
+  }
+}
+@media (max-width: 1100px) {
+  .skeletonScreenReservaTablet {
+    display: inline;
+    border-radius: 5px;
+  }
+  .skeletonScreenReservaDesktop {
+    display: none;
+  }
+  .cajaReservando {
+    grid-template-columns: repeat(2, 1fr);
+    height: inherit;
+  }
+  .cardReserva {
+    grid-column: 1 / span 2;
+    display: inline;
+    height: inherit;
+    padding: 30px;
+  }
+  .datosCajaReservas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .cardReservaImagen {
+    margin-bottom: 0px;
+    border-radius: 5px;
+    height: 374px;
+  }
+  .cardReservaTitulo {
+    padding: 0px;
+  }
+  .datosReserva {
+    padding: 0px;
+    width: 49%;
+  }
+  .imagenPrincipalReserva {
+    width: 49%;
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .skeletonScreenReservaTablet2 {
+    display: inline;
+    border-radius: 5px;
+  }
+  .skeletonScreenReservaTablet {
+    display: none;
+  }
+  .cardReservaImagen {
+    height: 312px;
+  }
+  .datosReserva {
+    height: 312px;
+  }
+  .cajaReserva2 {
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .calendarioReservaDesktopTablet {
+    display: none;
+  }
+  .calendarioReservaPhone {
+    display: inline;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .bloqueInputsReserva {
+    display: block;
+  }
+  .datosCajaReservas {
+    display: inline;
+  }
+  .imagenPrincipalReserva {
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .datosReserva {
+    width: 100%;
+    margin-top: 15px;
+    height: inherit;
+  }
+  .cajaReserva2 {
+    margin-bottom: 36px;
+  }
+  .horario {
+    width: 100%;
+  }
+  .horarioLlegadaTexto {
+    align-items: flex-start;
+  }
+}

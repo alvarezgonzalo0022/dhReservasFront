@@ -1,0 +1,80 @@
+.listCardReservas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0px 0px 0px;
+}
+.tituloMisReservas {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 17px;
+}
+.acomodarCargador {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 8px 8px;
+}
+.cargadorReservas {
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0px 35px 0 -5px #aaa, 0 -5px 0 0px #f0572d, 0 -25px 0 -5px #fff,
+    -25px -30px 0 0px #f0572d, -25px 30px 0 0px #f0572d,
+    25px -30px 0 0px #f0572d, 25px 30px 0 0px #f0572d, 20px 10px 0 5px #f0572d,
+    20px -10px 0 5px #f0572d, -20px -10px 0 5px #f0572d,
+    -20px 10px 0 5px #f0572d;
+}
+.cargadorReservas:after,
+.cargadorReservas:before {
+  content: "";
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  border: 4px dashed #fff;
+  bottom: -4px;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  animation: tape 4s linear infinite;
+}
+.cargadorReservas:before {
+  right: 0;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 34px #000;
+}
+.cargadorReservas:after {
+  left: 0;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 65px #000;
+}
+@keyframes tape {
+  0% {
+    transform: rotate(0deg) scale(0.4);
+  }
+  100% {
+    transform: rotate(-360deg) scale(0.4);
+  }
+}
+.acomodarCargador > div > p{
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+}
+@media (max-width: 700px) {
+  .acomodarCargador {
+    width: 90%;
+  }
+  .acomodarCargador > div > p{
+    width: 90%;
+  }
+}

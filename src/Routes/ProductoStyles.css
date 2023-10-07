@@ -1,0 +1,370 @@
+.detalleProducto {
+  display: grid;
+  justify-items: center;
+}
+.datosUbicacion {
+  grid-column: 1 / span 4;
+  background-color: #eeeff2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.datosUbicacion p {
+  color: #31363f;
+  margin-left: 6px;
+  font-size: 14px;
+}
+.cambiarIconosComp {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.cambiarIconosComp:hover{
+  transition: .2s;
+  transform: scale(.90);
+}
+.iconoLugar {
+  color: #191b1d;
+  width: 10px;
+}
+.iconosComp {
+  display: flex;
+}
+.iconoComp {
+  margin: 0px 15px;
+  font-size: 24px;
+  color: #191b1d;
+  cursor: pointer;
+}
+.iconoComp:hover{
+  transition: .2s;
+  transform: scale(1.3);
+}
+.aparece {
+  display: block;
+}
+.desaparece {
+  display: none;
+}
+.favCompartir {
+  grid-column: 1 / span 4;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.cambiarFav {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.corazon {
+  margin: 0px 15px;
+  font-size: 24px;
+  color: #191b1d;
+}
+.corazon2 {
+  margin: 0px 15px;
+  width: 24px;
+  height: 23px;
+  color: #191b1d;
+}
+.bloqueImagenes {
+  grid-column: 1 / span 4;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  gap: 10px;
+  padding: 0px 40px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+.imagen1 {
+  border: 2px solid black;
+  height: 500px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+}
+.skeletonScreenImagen1 {
+  border-radius: 10px;
+}
+.imagen2 {
+  border: 2px solid black;
+  height: 244.5px;
+  border-radius: 10px;
+}
+.bloqueDescripcion {
+  grid-column: 1 / span 4;
+  width: 100%;
+}
+.tituloProducto {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f4f50;
+  margin-bottom: 35px;
+}
+.caracteristicas {
+  grid-column: 1 / span 4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.caracteristicas div {
+  margin-bottom: 34px;
+}
+.fechasDisponibles {
+  grid-column: 1 / span 4;
+  background-color: #ececef;
+  padding: 14px 40px 28px 40px;
+  width: 100%;
+}
+.formularioProducto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendarioProductoDesktopTablet {
+  width: 65%;
+}
+.cajaBotonProducto {
+  width: 31%;
+  height: 149px;
+  background-color: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.cajaBotonProducto p {
+  font-weight: 700;
+}
+.cajaBotonProducto button {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  background-color: #f0572d;
+  border: 0;
+  height: 40px;
+  color: white;
+  width: 100%;
+}
+.mapa {
+  grid-column: 1 / span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+.mapa p {
+  margin-bottom: 25px;
+  grid-column: 1 / span 4;
+  margin-top: 11px;
+}
+.mapaUbicacion {
+  height: 540px;
+  width: 100%;
+  grid-column: 1 / span 4;
+}
+.bloqueDescripcionSinBor {
+  grid-column: 1 / span 4;
+  background-color: #ececef;
+  width: 100%;
+}
+.bloqueDescripcionSinBor p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.tituloSecciones {
+  grid-column: 1 / span 4;
+  border-bottom: 1px solid #f0572d;
+  margin-bottom: 42px;
+  width: 100%;
+}
+.tituloSeccionesBuscar {
+  grid-column: 1 / span 4;
+  border-bottom: 1px solid #f0572d;
+  width: 100%;
+}
+.tituloSecciones p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.politicas {
+  grid-column: 1 / span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.tituloPolitica {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+.politicasTexto {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.padding {
+  padding: 14px 40px;
+}
+.calendarioProductoPhone {
+  display: none;
+}
+.calendarioProductoDesktopTablet {
+  display: none;
+}
+.calendarioProductoDesktop {
+  display: block;
+  width: 65%;
+}
+.botonVerMasGaleria {
+  border: none;
+  position: absolute;
+  right: 59px;
+  bottom: 15px;
+  text-decoration-line: underline;
+  font-weight: 700;
+  color: #ffffff;
+}
+.cajaOpaca {
+  width: 100%;
+  height: 10000px;
+  z-index: 1000;
+  position: absolute;
+  background: #31363F;
+  opacity: 0.95;
+  backdrop-filter: blur(250px);
+}
+.desabilitado {
+  display: none;
+}
+.cajaGaleriaSinOpacity {
+  position: absolute;
+  z-index: 1000;
+  width: 1px;
+  height: 4000px;
+}
+.galeriaParaTabletPhone {
+  display: none;
+}
+.botonIniciarReservaProducto {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .imagen1 {
+    height: 388px;
+  }
+  .imagen2 {
+    height: 189px;
+  }
+  .calendarioProductoDesktop {
+    display: none;
+  }
+  .calendarioProductoDesktopTablet {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .box > div{
+    min-width: 100%;
+  }
+  .botonIniciarReservaProducto {
+    width: 49%;
+  }
+  .formularioProducto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .calendarioProductoDesktopTablet {
+    width: 80%;
+  }
+  .cajaBotonProducto {
+    width: 100%;
+    height: unset;
+    background-color: unset;
+    border: 0;
+    box-shadow: unset;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+  }
+  .cajaBotonProducto p {
+    width: 49%;
+  }
+  .cajaBotonProducto button {
+    width: 100%;
+  }
+  .caracteristicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bloqueImagenes {
+    padding: 0px;
+  }
+  .imagen1 {
+    display: none;
+  }
+  .galeriaParaTabletPhone {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    display: inline;
+  }
+  .imagen2,
+  .botonVerMasGaleria {
+    display: none;
+  }
+  .mapaUbicacion {
+    height: 500px;
+  }
+  .politicas {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .cajaPolCan {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  }
+  .cajaSalSeg {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+  }
+  .cajaNorAut {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+}
+@media (max-width: 768px) {
+  .calendarioProductoDesktopTablet {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .calendarioProductoDesktopTablet {
+    display: none;
+  }
+  .calendarioProductoPhone {
+    display: inline;
+    width: 100%;
+  }
+  .mapaUbicacion {
+    height: 307px;
+  }
+  .cajaPolCan {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+  }
+  .cajaSalSeg {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+  }
+  .cajaNorAut {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+  }
+}

@@ -1,0 +1,33 @@
+.bloqueHeader{
+    position: sticky;
+    background-color: #F0572D;
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-flow: row wrap;
+    z-index: 200;
+    grid-column: 1 / span 4;
+}
+.volverHomeBloque:hover{
+    transition: .3s;
+    transform: scale(.90);
+}
+.volver{
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.nombreCategoria{
+    font-size: 14px;
+    font-weight: 700;
+    color: #DFE4EA;
+}
+.marcaCategoria{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}

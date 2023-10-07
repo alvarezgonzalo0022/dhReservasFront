@@ -1,0 +1,248 @@
+.card {
+  width: 848px;
+  height: 283px;
+  display: flex;
+  margin: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid #dfe4ea;
+}
+.botonVerMas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imagenAuto {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.masInfo {
+  color: #f0572d;
+}
+.cajaImagen {
+  width: 50%;
+}
+.info {
+  font-size: 14px;
+  width: 100%;
+  font-weight: 500;
+  overflow: hidden;
+}
+.cajaInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.verMas {
+  width: 90%;
+  height: 40px;
+  /* border-radius: 5px;
+  background-color: #f0572d;
+  border: 0px;
+  box-shadow: 0px 5px 5px rgba(240, 87, 45, 0.4);
+  color: white; */
+}
+.verMas {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.verMas .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 40px;
+  background: #f0572d;
+  border-radius: 1.625rem;
+}
+
+.verMas .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.verMas .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.verMas .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.verMas .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.45rem 0;
+  margin: 0 0 0 1.85rem;
+  border-left: none;
+  border-bottom: 1px solid #f0572d;
+  border-right: 1px solid #f0572d;
+  border-top: 1px solid #f0572d;
+  border-radius: 0px 20px 20px 0px;
+  color: #f0572d;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.verMas:hover .circle {
+  width: 100%;
+}
+
+.verMas:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.verMas:hover .button-text {
+  color: #fff;
+}
+/* .verMas:hover {
+  transition: 0.3s;
+  transform: scale(0.98);
+  box-shadow: none;
+} */
+.catNom {
+  width: 90%;
+}
+.catNom p {
+  font-weight: 700;
+  opacity: 0.5;
+}
+.catNom h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.icoUbi {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.icoUbi p {
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.icoUbi img {
+  width: 14px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1500px) {
+  .card {
+    width: 635px;
+  }
+}
+@media (max-width: 1310px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 1220px) {
+  .card {
+    width: 30%;
+    height: 491px;
+    flex-direction: column;
+  }
+  .cajaImagen {
+    width: 100%;
+    height: 50%;
+  }
+  .imagenAuto {
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .cajaInfo {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 1100px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: 300px;
+    flex-direction: inherit;
+  }
+  .cajaImagen {
+    width: inherit;
+    height: inherit;
+  }
+  .imagenAuto {
+    height: inherit;
+    border-radius: inherit;
+  }
+  .cajaInfo {
+    width: inherit;
+    height: inherit;
+  }
+  .imagenAuto {
+    height: 92%;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .cajaImagen {
+    align-items: center;
+    display: flex;
+  }
+}
+@media (max-width: 550px) {
+  .card {
+    width: 393px;
+    height: 491px;
+    flex-direction: column;
+  }
+  .cajaImagen {
+    width: 100%;
+    height: 50%;
+  }
+  .imagenAuto {
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .cajaInfo {
+    width: 100%;
+    height: 50%;
+  }
+}
